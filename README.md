@@ -20,7 +20,3 @@ prt Please give me a cool comment!
 # If supported, this will also be copied to your clipboard automatically.
 # This relies on the excellent https://github.com/atotto/clipboard library
 ```
-
-## License
-
-NewBSD.
