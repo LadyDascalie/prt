@@ -38,6 +38,9 @@ func main() {
 		// create a buffer
 		var buf bytes.Buffer
 
+		// Make some room
+		buf.WriteString("\n\n---\n\n")
+
 		// create a decorator
 		decorator := strings.Repeat("-", longest+1)
 
