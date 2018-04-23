@@ -7,8 +7,9 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/atotto/clipboard"
 	"bytes"
+
+	"github.com/atotto/clipboard"
 	"github.com/fatih/color"
 )
 
@@ -37,9 +38,6 @@ func main() {
 	if len(lines) > 0 {
 		// create a buffer
 		var buf bytes.Buffer
-
-		// Make some room
-		buf.WriteString("\n\n---\n\n")
 
 		// create a decorator
 		decorator := strings.Repeat("-", longest+1)
@@ -74,6 +72,9 @@ func main() {
 
 		// write
 		out := buf.String()
+
+		// Make some room
+		fmt.Printf("\n\n---\n\n")
 
 		fmt.Println(out)
 		if !clipboard.Unsupported {
